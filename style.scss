@@ -40,6 +40,11 @@ body {
                             font-size: 30px;
                             font-weight: bold;
                             text-decoration: none;
+
+                            &:hover {
+                                color: goldenrod;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

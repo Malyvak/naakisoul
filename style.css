@@ -41,4 +41,8 @@ body .main-container .primary-content .links ul li a {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
+}
+body .main-container .primary-content .links ul li a:hover {
+  color: goldenrod;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
