@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Arial Black", "Arial-BoldMT", "sans-serif";
+    vertical-align: baseline;
+    overflow: hidden;
+    position: relative;
+
+    .main-container {
+        background-image: url("./img/site_bg.png");
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+
+        .primary-content {
+            padding: 1rem;
+
+            @media(min-width: 570px) {
+                padding: 2.5% 0 0 10%;
+            }
+
+            .title {
+                max-width: 28rem;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .links {
+                padding-bottom: 3rem;
+                ul {
+                    li {
+                        list-style: none;
+                        a {
+                            color: white;
+                            font-size: 30px;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
