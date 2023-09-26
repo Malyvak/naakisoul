@@ -18,8 +18,8 @@ body {
         .primary-content {
             padding: 1rem;
 
-            @media(min-width: 570px) {
-                padding: 2.5% 0 0 10%;
+            @media(min-width: 600px) {
+                padding: 2.5% 20% 0 10%;
             }
 
             .title {
@@ -32,6 +32,7 @@ body {
 
             .links {
                 padding-bottom: 3rem;
+                
                 ul {
                     li {
                         list-style: none;
@@ -48,9 +49,42 @@ body {
                         }
                     }
                 }
+
+                .spotify-embed {
+                    padding-top: 3rem;
+                    width: 60%;
+                    border-radius: 12px;
+                    margin-left: 4rem;
+                }
             }
         }
     }
 }
 
+@media screen and (min-width:600px) {
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
+@media screen and (max-width:700px) {
+    body > .main-container > .primary-content > .links {
+
+        padding-bottom: 0rem;
+
+        ul {
+            li {
+                a {
+                   font-size: 22px; 
+                   line-height: 1.6;
+                }
+            }
+        }
+
+        .spotify-embed {
+            padding-top: 1rem;
+            margin-left: 10%;
+        }
+    }
+}
