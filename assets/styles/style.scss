@@ -1,0 +1,186 @@
+@import 'fonts';
+
+body {
+    margin: 0;
+    overflow: hidden;
+    vertical-align: baseline;
+    overflow: hidden;
+    position: relative;
+
+    .main-container {
+        background-image: url("../images/naaki_background.png");
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+
+        @media(min-width: 700px) {
+            display: block;
+        }
+
+        .primary-content {
+            height: 100%;
+            display: block;
+
+            @media(min-width: 700px) {
+                padding: 0 calc(7vw);
+                display: flex;
+            }
+
+            .column-1 {
+                flex-basis: 50%;
+
+                
+                img {
+                    max-width: 28rem;
+                    width: 100%;
+                    height: auto;
+
+                    @media(min-width: 700px) {
+                        max-width: 32rem;
+                        min-width: 20rem;
+                    }
+                }
+                
+    
+                .links {
+
+                    bottom: calc(110px - 5vw);
+                    text-align: center;
+                    padding-bottom: 3rem;
+
+                    @media(min-width: 700px) {
+                        padding-bottom: 0;
+                    }
+
+                    @media(min-width: 900px) {
+                        padding-top: 2rem; 
+                        padding-left: 4rem;
+                        text-align: start;
+                        position: absolute;
+                    }
+
+                    .link {
+                        padding: 0.2rem 0 0.2rem 0;
+                        
+                        @media(min-width: 700px) {
+                            padding: 0;
+                        }
+
+                        a {
+                            color: white;
+                            font-size: 28px;
+                            font-family: 'UncutSans', sans-serif;
+                            font-weight: 300;
+                            text-decoration: none;
+                           
+                            @media(min-width: 500px) {
+                                font-size: 30px;
+                            }
+
+                            @media(min-width: 700px) {
+                                font-size: 32px;
+                            }
+
+                            &:hover {
+                                color: #b5bdca;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .column-2 {
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media(min-width: 900px) {
+                    margin-left: 4rem;
+                }
+                
+                .column-2-content {
+                    max-width: 24rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 2rem;
+
+                    @media(min-width: 700px) {
+                        margin-bottom: 0;
+                    }
+
+                    @media(min-width: 900px) {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .album-container {
+                        flex-basis: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                            .album-image {
+                                width: 14rem;
+
+                                @media(min-width: 900px) {
+                                    width: 18rem;
+                                }
+                                @media(min-width: 1200px) {
+                                    width: 22rem;
+                                }
+                            }
+                            .album-text {
+                                margin-top: 1rem;
+                                text-align: center;
+                                width: 100%;
+                                color: white;
+                                font-size: 28px;
+                                font-family: 'UncutSans', sans-serif;
+                                font-weight: 300;
+
+                                @media(min-width: 900px) {
+                                    font-size: 32px;
+                                }
+                            }
+                        }
+                    .icon-container {
+                        flex-basis: 10%;
+                        padding: 1rem 0;
+
+                        @media(min-width: 900px) {
+                            padding: 1rem;
+                        }
+
+                        .icon {
+
+                            &:hover {
+                                cursor: pointer;
+                                filter: invert(82%) sepia(6%) saturate(482%) hue-rotate(178deg) brightness(94%) contrast(83%);
+                            }
+
+                            &.spotify {
+                                padding-left: 1px;
+                            }
+                            
+                            &.bandcamp {
+                                padding-left: 1px;
+                                padding-top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

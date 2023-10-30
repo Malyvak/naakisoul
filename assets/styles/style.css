@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/Uncut-Sans/Webfonts/UncutSans-Medium.woff2") format("woff2"), url("../fonts/Uncut-Sans/Webfonts/UncutSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/Uncut-Sans/Webfonts/UncutSans-Light.woff2") format("woff2"), url("../fonts/Uncut-Sans/Webfonts/UncutSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "UncutSans";
+  src: url("../fonts/Uncut-Sans/Webfonts/UncutSans-Bold.woff2") format("woff2"), url("../fonts/Uncut-Sans/Webfonts/UncutSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  vertical-align: baseline;
+  overflow: hidden;
+  position: relative;
+}
+body .main-container {
+  background-image: url("../images/naaki_background.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 700px) {
+  body .main-container {
+    display: block;
+  }
+}
+body .main-container .primary-content {
+  height: 100%;
+  display: block;
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content {
+    padding: 0 7vw;
+    display: flex;
+  }
+}
+body .main-container .primary-content .column-1 {
+  flex-basis: 50%;
+}
+body .main-container .primary-content .column-1 img {
+  max-width: 28rem;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content .column-1 img {
+    max-width: 32rem;
+    min-width: 20rem;
+  }
+}
+body .main-container .primary-content .column-1 .links {
+  bottom: calc(110px - 5vw);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content .column-1 .links {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-1 .links {
+    padding-top: 2rem;
+    padding-left: 4rem;
+    text-align: start;
+    position: absolute;
+  }
+}
+body .main-container .primary-content .column-1 .links .link {
+  padding: 0.2rem 0 0.2rem 0;
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content .column-1 .links .link {
+    padding: 0;
+  }
+}
+body .main-container .primary-content .column-1 .links .link a {
+  color: white;
+  font-size: 28px;
+  font-family: "UncutSans", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  body .main-container .primary-content .column-1 .links .link a {
+    font-size: 30px;
+  }
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content .column-1 .links .link a {
+    font-size: 32px;
+  }
+}
+body .main-container .primary-content .column-1 .links .link a:hover {
+  color: #b5bdca;
+  cursor: pointer;
+}
+body .main-container .primary-content .column-2 {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-2 {
+    margin-left: 4rem;
+  }
+}
+body .main-container .primary-content .column-2 .column-2-content {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 700px) {
+  body .main-container .primary-content .column-2 .column-2-content {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-2 .column-2-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+body .main-container .primary-content .column-2 .column-2-content .album-container {
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-container .primary-content .column-2 .column-2-content .album-container .album-image {
+  width: 14rem;
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-2 .column-2-content .album-container .album-image {
+    width: 18rem;
+  }
+}
+@media (min-width: 1200px) {
+  body .main-container .primary-content .column-2 .column-2-content .album-container .album-image {
+    width: 22rem;
+  }
+}
+body .main-container .primary-content .column-2 .column-2-content .album-container .album-text {
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 28px;
+  font-family: "UncutSans", sans-serif;
+  font-weight: 300;
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-2 .column-2-content .album-container .album-text {
+    font-size: 32px;
+  }
+}
+body .main-container .primary-content .column-2 .column-2-content .icon-container {
+  flex-basis: 10%;
+  padding: 1rem 0;
+}
+@media (min-width: 900px) {
+  body .main-container .primary-content .column-2 .column-2-content .icon-container {
+    padding: 1rem;
+  }
+}
+body .main-container .primary-content .column-2 .column-2-content .icon-container .icon:hover {
+  cursor: pointer;
+  filter: invert(82%) sepia(6%) saturate(482%) hue-rotate(178deg) brightness(94%) contrast(83%);
+}
+body .main-container .primary-content .column-2 .column-2-content .icon-container .icon.spotify {
+  padding-left: 1px;
+}
+body .main-container .primary-content .column-2 .column-2-content .icon-container .icon.bandcamp {
+  padding-left: 1px;
+  padding-top: 2px;
+}/*# sourceMappingURL=style.css.map */

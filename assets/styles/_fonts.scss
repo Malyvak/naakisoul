@@ -1,0 +1,30 @@
+// Medium weight
+@font-face {
+    font-family: 'UncutSans';
+    src: url('../fonts/Uncut-Sans/Webfonts/UncutSans-Medium.woff2') format('woff2'),
+         url('../fonts/Uncut-Sans/Webfonts/UncutSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  // Light weight
+  @font-face {
+    font-family: 'UncutSans';
+    src: url('../fonts/Uncut-Sans/Webfonts/UncutSans-Light.woff2') format('woff2'),
+         url('../fonts/Uncut-Sans/Webfonts/UncutSans-Light.woff') format('woff');
+    font-weight: 300; 
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  // Bold weight
+  @font-face {
+    font-family: 'UncutSans';
+    src: url('../fonts/Uncut-Sans/Webfonts/UncutSans-Bold.woff2') format('woff2'),
+         url('../fonts/Uncut-Sans/Webfonts/UncutSans-Bold.woff') format('woff');
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+  }
+  
