@@ -56,7 +56,6 @@ body .main-container .primary-content .column-1 {
   flex-basis: 50%;
 }
 body .main-container .primary-content .column-1 img {
-  padding-top: 10vh;
   max-width: 28rem;
   width: 100%;
   height: auto;
