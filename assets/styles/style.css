@@ -19,15 +19,19 @@
   font-style: normal;
   font-display: swap;
 }
+@keyframes fadeup {
+  from: {opacity: 0;}
+  to: {opacity: 1;}
+}
 body {
   margin: 0;
   overflow: hidden;
   vertical-align: baseline;
   overflow: hidden;
   position: relative;
+  background-image: url("../images/naaki_background.png");
 }
 body .main-container {
-  background-image: url("../images/naaki_background.png");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -36,6 +40,8 @@ body .main-container {
   overflow: auto;
   display: flex;
   justify-content: center;
+  animation-name: fadeup;
+  animation-duration: 2s;
 }
 @media (min-width: 700px) {
   body .main-container {
