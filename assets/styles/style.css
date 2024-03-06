@@ -72,6 +72,8 @@ body .main-container .primary-content .column-1 img {
   body .main-container .primary-content .column-1 img {
     max-width: 32rem;
     min-width: 20rem;
+    padding-left: 8vw;
+    padding-top: 2vw;
   }
 }
 body .main-container .primary-content .column-1 .links {
@@ -82,6 +84,7 @@ body .main-container .primary-content .column-1 .links {
 @media (min-width: 700px) {
   body .main-container .primary-content .column-1 .links {
     padding-bottom: 0;
+    margin-left: 12vw
   }
 }
 @media (min-width: 900px) {
@@ -131,6 +134,7 @@ body .main-container .primary-content .column-2 {
 @media (min-width: 900px) {
   body .main-container .primary-content .column-2 {
     margin-left: 4rem;
+    padding-right: 12vw;
   }
 }
 body .main-container .primary-content .column-2 .column-2-content {
