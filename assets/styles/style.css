@@ -20,8 +20,12 @@
   font-display: swap;
 }
 @keyframes fadeup {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body {
   margin: 0;
@@ -41,10 +45,6 @@ body .main-container {
   display: flex;
   justify-content: center;
 }
-.primary-content {
-  animation-name: fadeup;
-  animation-duration: 2s;
-}
 @media (min-width: 700px) {
   body .main-container {
     display: block;
@@ -53,6 +53,8 @@ body .main-container {
 body .main-container .primary-content {
   height: 100%;
   display: block;
+  animation-name: fadeup;
+  animation-duration: 2s;
 }
 @media (min-width: 700px) {
   body .main-container .primary-content {
@@ -73,18 +75,18 @@ body .main-container .primary-content .column-1 img {
     max-width: 32rem;
     min-width: 20rem;
     padding-left: 8vw;
-    padding-top: 2vw;
+    padding-top: 2vh;
   }
 }
 body .main-container .primary-content .column-1 .links {
-  bottom: calc(250px - 5vw);
+  top: calc(250px + 10vh);
   text-align: center;
   padding-bottom: 3rem;
 }
 @media (min-width: 700px) {
   body .main-container .primary-content .column-1 .links {
     padding-bottom: 0;
-    margin-left: 12vw
+    margin-left: 12vw;
   }
 }
 @media (min-width: 900px) {

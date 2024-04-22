@@ -1,14 +1,19 @@
 @import 'fonts';
 
+@keyframes fadeup {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 body {
     margin: 0;
     overflow: hidden;
     vertical-align: baseline;
     overflow: hidden;
     position: relative;
+    background-image: url("../images/naaki_background.png");
 
     .main-container {
-        background-image: url("../images/naaki_background.png");
         width: 100vw;
         height: 100vh;
         background-position: center;
@@ -25,6 +30,8 @@ body {
         .primary-content {
             height: 100%;
             display: block;
+            animation-name: fadeup;
+            animation-duration: 2s;
 
             @media(min-width: 700px) {
                 padding: 0 calc(7vw);
@@ -43,18 +50,20 @@ body {
                     @media(min-width: 700px) {
                         max-width: 32rem;
                         min-width: 20rem;
+                        padding-left: 8vw;
+                        padding-top: 2vh;
                     }
                 }
                 
     
                 .links {
-
-                    bottom: calc(110px - 5vw);
+                    top: calc(250px + 10vh);
                     text-align: center;
                     padding-bottom: 3rem;
 
                     @media(min-width: 700px) {
                         padding-bottom: 0;
+                        margin-left: 12vw;  
                     }
 
                     @media(min-width: 900px) {
@@ -104,6 +113,7 @@ body {
 
                 @media(min-width: 900px) {
                     margin-left: 4rem;
+                    padding-right: 12vw;
                 }
                 
                 .column-2-content {
